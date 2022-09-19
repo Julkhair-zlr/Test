@@ -1,0 +1,24 @@
+
+    const HeaderList = [
+        {
+            name: "Home",
+            icon: <HomeOutlinedIcon/>,
+            path: "/",
+          },
+          {
+            name: "Contact",
+            icon: <ContactsOutlinedIcon/>,
+            path: "/contact",
+          },
+          {
+            name: "About",
+            icon: <InfoOutlinedIcon />,
+            path: "/about",
+          },
+          {
+            name: "Login",
+            icon: <LoginOutlinedIcon />,
+            path: "/login",
+          }
+         
+    ]

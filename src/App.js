@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import {Box} from '@mui/material';
+import {Routes,Route,Link} from 'react-router-dom'
+import Home from './Components/HomePage/Home';
+import About from './Components/AboutPage/About';
+import Contact from './Components/ContactPage/Contact';
+import Login from './Components/LoginPage/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Routes>
+        <Route excet path='/' element=<Home/>/>
+        <Route excet path='/home' element=<Home/>/>
+        <Route excet path='/about' element=<About/>/>
+        <Route excet path='/contact' element=<Contact/>/>
+        <Route excet path='/login' element=<Login/>/>
+        <Route excet path='/*' element=<h1><marquee style={{color:'red'}}>404 Page not Found...</marquee></h1>/>
+      </Routes>      
+    </Box>
+    
   );
 }
 
