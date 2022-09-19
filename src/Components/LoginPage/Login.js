@@ -98,6 +98,7 @@ const Login = () => {
         </Button>
       </Box>
       <h5>{displayMessage}</h5>
+      <h5>{userLoginDetail}</h5>
       </Paper>
     </Box>
   );
