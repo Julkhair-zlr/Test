@@ -154,7 +154,7 @@ export default function Header() {
             <ListItem key={text.name} disablePadding>
               <ListItemButton onClick={() => navHandler(text, index)}>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {text.icon}
                 </ListItemIcon>
                 <ListItemText primary={text.name} onClick={() => navHandler(text, index)}/>
               </ListItemButton>
